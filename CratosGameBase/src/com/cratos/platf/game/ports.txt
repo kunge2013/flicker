@@ -1,0 +1,80 @@
+
+MySQL端口:  33563  7337    
+Redis端口:  6336   6556
+
+网关进程端口(xx为nodeid,10开始):
+ 自身端口:  102xx     HTTP端口:  105xx     SNCP端口: 107xx     WATCH端口: 109xx
+
+平台进程端口(xx为nodeid,10开始):
+ 自身端口:  202xx     HTTP端口:  205xx     SNCP端口: 207xx     WATCH端口: 209xx
+
+OSS进程端口(xx为nodeid,10开始):
+ 自身端口:  252xx     HTTP端口:  255xx     SNCP端口: 257xx     WATCH端口: 259xx
+
+STAT进程端口(xx为nodeid,10开始):
+ 自身端口:  282xx     HTTP端口:  285xx     SNCP端口: 287xx     WATCH端口: 289xx
+
+---------------------------------------------------------------------------------
+
+bba进程端口(xx为nodeid,10开始):
+ 自身端口:  312xx     HTTP端口:  315xx     SNCP端口: 317xx     WATCH端口: 319xx
+
+bjl进程端口(xx为nodeid,10开始):
+ 自身端口:  322xx     HTTP端口:  325xx     SNCP端口: 327xx     WATCH端口: 329xx
+
+bjsx进程端口(xx为nodeid,10开始):
+ 自身端口:  332xx     HTTP端口:  335xx     SNCP端口: 337xx     WATCH端口: 339xx
+
+ddz进程端口(xx为nodeid,10开始):
+ 自身端口:  342xx     HTTP端口:  345xx     SNCP端口: 347xx     WATCH端口: 349xx
+
+dez进程端口(xx为nodeid,10开始):
+ 自身端口:  352xx     HTTP端口:  355xx     SNCP端口: 357xx     WATCH端口: 359xx
+
+dsdh进程端口(xx为nodeid,10开始):
+ 自身端口:  362xx     HTTP端口:  365xx     SNCP端口: 367xx     WATCH端口: 369xx
+
+ermj进程端口(xx为nodeid,10开始):
+ 自身端口:  372xx     HTTP端口:  375xx     SNCP端口: 377xx     WATCH端口: 379xx
+
+fish进程端口(xx为nodeid,10开始):
+ 自身端口:  382xx     HTTP端口:  385xx     SNCP端口: 387xx     WATCH端口: 389xx
+
+fqzs进程端口(xx为nodeid,10开始):
+ 自身端口:  392xx     HTTP端口:  395xx     SNCP端口: 397xx     WATCH端口: 399xx
+
+hhdz进程端口(xx为nodeid,10开始):
+ 自身端口:  402xx     HTTP端口:  405xx     SNCP端口: 407xx     WATCH端口: 409xx
+
+jdqs进程端口(xx为nodeid,10开始):
+ 自身端口:  412xx     HTTP端口:  415xx     SNCP端口: 417xx     WATCH端口: 419xx
+
+jyzj进程端口(xx为nodeid,10开始):
+ 自身端口:  422xx     HTTP端口:  425xx     SNCP端口: 427xx     WATCH端口: 429xx
+
+lhdb进程端口(xx为nodeid,10开始):
+ 自身端口:  432xx     HTTP端口:  435xx     SNCP端口: 437xx     WATCH端口: 439xx
+
+lhud进程端口(xx为nodeid,10开始):
+ 自身端口:  442xx     HTTP端口:  445xx     SNCP端口: 447xx     WATCH端口: 449xx
+
+niu0进程端口(xx为nodeid,10开始):
+ 自身端口:  512xx     HTTP端口:  515xx     SNCP端口: 517xx     WATCH端口: 519xx
+
+niu4进程端口(xx为nodeid,10开始):
+ 自身端口:  522xx     HTTP端口:  525xx     SNCP端口: 527xx     WATCH端口: 529xx
+
+pdk进程端口(xx为nodeid,10开始):
+ 自身端口:  532xx     HTTP端口:  535xx     SNCP端口: 537xx     WATCH端口: 539xx
+
+sgdr进程端口(xx为nodeid,10开始):
+ 自身端口:  542xx     HTTP端口:  545xx     SNCP端口: 547xx     WATCH端口: 549xx
+
+yqcm进程端口(xx为nodeid,10开始):
+ 自身端口:  552xx     HTTP端口:  555xx     SNCP端口: 557xx     WATCH端口: 559xx
+
+zcjb进程端口(xx为nodeid,10开始):
+ 自身端口:  562xx     HTTP端口:  565xx     SNCP端口: 567xx     WATCH端口: 569xx
+
+zjh进程端口(xx为nodeid,10开始):
+ 自身端口:  572xx     HTTP端口:  575xx     SNCP端口: 577xx     WATCH端口: 579xx

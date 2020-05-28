@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application port="10210">     
+    
+    <!--  详细配置说明见： http://redkale.org/redkale.html#redkale_confxml  -->
+    
+    <resources>     
+        
+        <properties>
+            <property name="system.property.http.response.header.server" value="game/1.0"/>
+            <property name="system.property.nodeid" value="10" />
+        </properties>  
+        
+        <source name="wsgame" value="org.redkalex.cache.RedisCacheSource">
+            <node addr="127.0.0.1" port="6379"/>
+        </source>
+        
+    </resources> 
+        
+    <server protocol="HTTP" host="0.0.0.0" port="10510">  
+    
+        <request>
+            <remoteaddr value="request.headers.X-RemoteAddress"/>
+        </request>
+        
+        <response>
+            <defcookie domain="" path=""/>
+            <addheader name="Access-Control-Allow-Origin" value="request.headers.Origin" /> 
+            <setheader name="Access-Control-Allow-Headers" value="request.headers.Access-Control-Request-Headers"/>			
+            <setheader name="Access-Control-Expose-Headers" value="app-agent,jsessionid,unf,retcode,retinfo,captcha_key,CAPTCHA_KEY"/>
+            <setheader name="Access-Control-Allow-Credentials" value="true"/>
+            <options auto="true" />
+        </response>
+   
+        <filters autoload="true"/>  
+        <services autoload="true"/>  
+        <rest path="/pipes" autoload="true"/>  
+        <servlets path="/pipes" autoload="true"/>  
+        
+    </server>
+    
+    <server protocol="SNCP" host="0.0.0.0" port="10710">  
+        <services autoload="true"/>     
+    </server>
+    
+    <server protocol="WATCH" host="0.0.0.0" port="10910">       
+        <services autoload="true" />              
+        <filters autoload="true" /> 
+    </server>
+    
+</application>

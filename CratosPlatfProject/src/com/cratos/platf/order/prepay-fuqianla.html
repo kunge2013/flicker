@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>支付</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+        <script src="https://lib.fuqian.la/h5jssdk.4.0.js"></script>
+    </head>
+    <body>
+
+        <button id="wx">微信支付</button>
+
+        <script>
+            var jsoncontent = '${content}'; //这里必须要用单引号引起来
+            var json = JSON.parse(jsoncontent);
+            document.querySelector('#wx').addEventListener('click', e => {
+                FUQIANLA.init({
+                    app_id: json.appid,
+                    order_no: Date.now(),
+                    amount: json.price, //单位分
+                    channel: 'wx_pay_pub',
+                    subject: json.title,
+                    notify_url: json.notifyurl,
+                    extra: {
+                        openid: 'odKIlw0xYWR0mqXZ4VHER611W990',
+                        cb: data => {
+                            console.log(data);
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+2020-05-25 10:10:07.557 INFO [Redkale-Application-Main-Thread] org.redkale.boot.Application <init>
+------------------------- Redkale 2.0.0-rc4 -------------------------
+2020-05-25 10:10:07.568 INFO [Redkale-Application-Main-Thread] org.redkale.boot.Application init
+APP_PID  = 17436
+APP_JAVA = 11.0.6
+APP_ADDR = 127.0.0.1
+APP_HOME = D:\flicker-games\fqyy-games\flicker-games\CratosGameflicker
+APP_CONF = file:/D:/flicker-games/fqyy-games/flicker-games/CratosGameflicker/conf/
+2020-05-25 10:10:08.001 INFO [Redkale-SNCP-*:10710-Thread] org.redkale.boot.NodeServer init
+NodeSncpServer load filter class in 188 ms
+2020-05-25 10:10:08.017 INFO [Redkale-SNCP-*:30710-Thread] org.redkale.boot.NodeServer init
+NodeSncpServer load filter class in 213 ms
+2020-05-25 10:10:08.800 INFO [Redkale-SNCP-*:10710-Thread] org.redkale.boot.NodeServer$1 load
+[Redkale-SNCP-*:10710-Thread] Load Source org.redkalex.cache._DynLocalRedisCacheSource_wsgame(name = 'wsgame', serviceid = e42eac60293495f48420747adf1523a2, serviceversion = 0, clientaddr = 127.0.0.1:10710, actions.size = 131)
+2020-05-25 10:10:08.962 FINEST [Redkale-SNCP-*:10710-Thread] org.redkale.source.CacheMemorySource init
+_DynLocalCacheMemorySource_captcha:captcha start schedule expire executor
+2020-05-25 10:10:08.963 FINEST [Redkale-SNCP-*:30710-Thread] org.redkale.source.CacheMemorySource init
+_DynLocalCacheMemorySource_usersessions:usersessions start schedule expire executor
+2020-05-25 10:10:08.964 INFO [Redkale-SNCP-*:30710-Thread] org.redkale.boot.NodeServer$1 load
+[Redkale-SNCP-*:30710-Thread] Load Source org.redkale.source._DynLocalCacheMemorySource_usersessions(name = 'usersessions', serviceid = 1d83743fae5b5de9cf8e6acd4311403d, serviceversion = 0, clientaddr = 127.0.0.1:30710, actions.size = 192)
+2020-05-25 10:10:08.964 INFO [Redkale-SNCP-*:10710-Thread] org.redkale.boot.NodeServer$1 load
+[Redkale-SNCP-*:10710-Thread] Load Source org.redkale.source._DynLocalCacheMemorySource_captcha(name = 'captcha', serviceid = 148156203575e499efc9d8d4c48f558e, serviceversion = 0, clientaddr = 127.0.0.1:10710, actions.size = 192)
+2020-05-25 10:10:08.998 INFO [Redkale-SNCP-*:10710-Thread] com.cratos.route.gateway.GateWayService init
+获得全局模块keys: {platf={10={addr=/192.168.3.11:30510, pool=3000}}, skywar={10={addr=/192.168.3.11:30510, pool=3000}}}
+2020-05-25 10:10:09.000 FINEST [Redkale-SNCP-*:10710-Thread] com.cratos.route.gateway.GateWayService init
+_DynLocalGateWayService start LoadModuleAddressTask task scheduler executor
+2020-05-25 10:10:09.004 INFO [Redkale-SNCP-*:10710-Thread] org.redkale.boot.NodeServer loadService
+[Redkale-SNCP-*:10710-Thread] LocalService (type= com.cratos.route.captcha.CaptchaService , name=''      ) load and init in 0 ms
+[Redkale-SNCP-*:10710-Thread] LocalService (type= com.cratos.route.gateway.GateWayService , name=''      ) load and init in 30 ms
+[Redkale-SNCP-*:10710-Thread] LocalService (type= org.redkale.net.http.WebSocketNode      , name='wsgame') load and init in 0 ms
+[Redkale-SNCP-*:10710-Thread] All Services load cost 999 ms
+
+2020-05-25 10:10:09.005 FINE [Redkale-SNCP-*:10710-Thread] org.redkale.boot.NodeSncpServer init
+[Redkale-SNCP-*:10710-Thread]  Load SncpDynServlet (type=com.cratos.route.captcha.CaptchaService, serviceid=1475c3aefd9d59cc0dff504942f3532f, name=''       , actions.size= 3)
+[Redkale-SNCP-*:10710-Thread]  Load SncpDynServlet (type=com.cratos.route.gateway.GateWayService, serviceid=cb2d53c3bca3f508e9bc6b7d9b735ad3, name=''       , actions.size= 3)
+[Redkale-SNCP-*:10710-Thread]  Load SncpDynServlet (type=org.redkale.net.http.WebSocketNode     , serviceid=1bd9d582c41a026426fb25d39e7c9daa, name='wsgame' , actions.size=24)
+[Redkale-SNCP-*:10710-Thread]  Load SncpDynServlet (type=org.redkale.source.CacheSource         , serviceid=e42eac60293495f48420747adf1523a2, name='wsgame' , actions.size=131)
+
+2020-05-25 10:10:09.046 INFO [Redkale-SNCP-*:10710-Thread] org.redkale.net.Server start
+[Redkale-SNCP-*:10710-Thread] SncpServer listen: /0.0.0.0:10710, threads: 16, maxbody: 64K, bufferCapacity: 32K, bufferPoolSize: 64, responsePoolSize: 32, started in 1566 ms
+2020-05-25 10:10:09.190 FINEST [Redkale-SNCP-*:30710-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+UserDetail query sql=SELECT a.* FROM userdetail a
+2020-05-25 10:10:09.204 FINEST [Redkale-SNCP-*:30710-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarAwardInfo query sql=SELECT a.* FROM skywarawardinfo a ORDER BY awardlevel ASC, display ASC, awardid ASC LIMIT 100 OFFSET 0
+2020-05-25 10:10:09.238 FINEST [Redkale-SNCP-*:30710-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarEnemyKind query sql=SELECT a.* FROM skywarenemykind a WHERE a.status = 10
+2020-05-25 10:10:09.388 FINEST [Redkale-SNCP-*:30710-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarSkinInfo query sql=SELECT a.* FROM skywarskininfo a
+2020-05-25 10:10:09.415 FINEST [Redkale-SNCP-*:30710-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarAccount query sql=SELECT a.* FROM skywaraccount a WHERE a.currNuclears >= 1 ORDER BY currNuclears DESC LIMIT 100 OFFSET 0
+2020-05-25 10:10:09.419 FINEST [Redkale-SNCP-*:30710-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+UserDetail query sql=SELECT a.userid,a.coupons,a.intro,a.gender,a.face,a.username FROM userdetail a WHERE a.coupons >= 20000 ORDER BY coupons DESC LIMIT 100 OFFSET 0
+2020-05-25 10:11:00.001 FINEST [_DynLocalSkywarAwardService-Task-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarAwardInfo query sql=SELECT a.* FROM skywarawardinfo a ORDER BY awardlevel ASC, display ASC, awardid ASC LIMIT 100 OFFSET 0
+2020-05-25 10:11:09.208 FINEST [UserService-Task-Thread] com.cratos.platf.user.UserService lambda$init$5
+可用机器人数: 0, 游戏中的机器人: {}
+2020-05-25 10:11:09.383 FINEST [skywar-task-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarEnemyKind query sql=SELECT a.* FROM skywarenemykind a WHERE a.status = 10
+2020-05-25 10:11:09.392 FINEST [skywar-task-Thread] org.redkalex.source.mysql.MysqlDataSource querySheetDB
+SkywarSkinInfo query sql=SELECT a.* FROM skywarskininfo a
